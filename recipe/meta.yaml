@@ -1,5 +1,5 @@
 {% set name = "django-multiselectfield" %}
-{% set version = "0.1.12" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-multiselectfield-{{ version }}.tar.gz
-  sha256: d0a4c71568fb2332c71478ffac9f8708e01314a35cf923dfd7a191343452f9f9
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 3f8b4fff3e07d4a91c8bb4b809bc35caeb22b41769b606f4c9edc53b8d72a667
 
 build:
   noarch: python
